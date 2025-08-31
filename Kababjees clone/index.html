@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+                <!-- titile and favicon -->
+    <title>Kababjees</title>
+    <link rel="shortcut icon" href="01-assets/favicon.jpg" type="image/x-icon">
+                <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+               <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+               <!-- fontawesome  cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+</head>
+<body>
+                    <!-- HOME SECTION -->
+
+  <section id="home">
+    <video autoplay muted loop>
+      <source src="01-assets/bg vid.mp4" type="video/mp4">
+    </video>
+
+     <!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container " >
+
+    <!-- Left menu -->
+    <ul class="navbar-nav d-none d-lg-flex">
+      <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about-us">ABOUT US</a></li>
+      <li class="nav-item"></li>
+      <li class="nav-item"><a class="nav-link" href="#location">LOCATION</a></li>
+    </ul>
+
+    <!-- Logo  -->
+    <a class="navbar-brand mx-auto" href="#">
+      <img src="01-assets/logo.png" alt="Kababjees" width="120">
+    </a>
+
+    <!-- Right menu -->
+    <ul class="navbar-nav d-none d-lg-flex">
+      <li class="nav-item"><a class="nav-link" href="#">ORDER ONLINE</a></li>
+      <li class="nav-item"><a class="nav-link" href="bank.html">BANK DISCOUNT</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+    </ul>
+
+    <!-- Mobile toggle button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+    <!-- menu -->
+<div class="modal fade menu-modal" id="menuModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Close button -->
+      <div class="modal-header border-0">
+        <h5 class="modal-title w-100 text-center">MENU</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body with buttons -->
+      <div class="modal-body text-center">
+        <a href="https://kababjees.com/images/kababjees-new-manu-karachi-hyderabad.pdf" class="menu-btn" target="_blank">KARACHI</a>
+        <a href="https://kababjees.com/images/kababjees-new-manu-karachi-hyderabad.pdf" class="menu-btn" target="_blank">HYDERABAD</a>
+        <a href="https://kababjees.com/images/lahore-menu-kababjees.pdf" class="menu-btn" target="_blank">LAHORE</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<h1 id="heading1">THE BEST PLACE TO REJOICE <br>
+             VARIETY OF CUISINES.</h1>
+  </section>
+
+                      <!--ABOUT US SECTION  -->
+
+<section class="container-1">
+  <section id="about-us">
+    <div>
+      <h1>ABOUT US</h1>
+      <p>We welcome you to explore our taste of the world, in continental and Chinese delights and that's even before you get to the variety and excellence, of our barbecue grill. With warmth service rarely experienced, it is a perfect place of rejoice with family, to soak in the relaxing decor and with deep desire to revisit for once, in never enough! Now with our network of four branches across the city of lights, it is possible to experience the magic, whilst collect the best of memories much more close to home.</p>
+      <p>Now you can have the goodness of Kababjees delivered at home by just ringing us a bell. Call 111-666-111 for more information.</p>
+    </div>
+    <img src="01-assets/about-us-img.jpg" alt="about us image">
+  </section>
+                   <!-- OUR SPECIALITY SECTION -->
+  <section id="our-speciality">
+    
+    <h1>OUR SPECIALITIES</h1>
+    <div class="line"></div>
+    <div class="text"><i>Some of our best specialities menu</i></div>
+     <!-- Carousel Start -->
+<div id="specialityCarousel" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-inner">
+
+    <!-- First Slide -->
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+
+        <!-- Card 1 -->
+       <div class="card-container"> 
+        <div class="card" style="width: 20.282rem;">
+          <img src="03-our-spec-imges/pic1.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <button class="btn btn-primary">ORDER ONLINE</button>
+          </div>
+        </div>
+      </div> 
+
+        <!-- Card 2 -->
+       <div class="card-container"> 
+        <div class="card" style="width: 20.282rem;">
+          <img src="03-our-spec-imges/pic2.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <button class="btn btn-primary">ORDER ONLINE</button>
+          </div>
+        </div>
+      </div> 
+
+        <!-- Card 3 -->
+       <div class="card-container">   
+        <div class="card" style="width: 20.282rem;">
+          <img src="03-our-spec-imges/pic3.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <button class="btn btn-primary">ORDER ONLINE</button>
+          </div>
+        </div>
+       </div>
+
+      </div>
+    </div>
+
+    <!-- Second Slide -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+
+        <!-- Card 4 -->
+       <div class="card-container">
+        <div class="card" style="width: 20.282rem;">
+          <img src="03-our-spec-imges/pic4.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <button class="btn btn-primary">ORDER ONLINE</button>
+          </div>
+        </div>
+       </div>
+
+        <!-- Card 5 -->
+       <div class="card-container">  
+        <div class="card" style="width: 20.282rem;">
+          <img src="03-our-spec-imges/pic5.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <button class="btn btn-primary">ORDER ONLINE</button>
+          </div>
+        </div>
+       </div>
+
+        <!-- Card 6 -->
+       <div class="card-container">
+        <div class="card" style="width: 20.282rem;">
+          <img src="03-our-spec-imges/pic6.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <button class="btn btn-primary">ORDER ONLINE</button>
+          </div>
+        </div>
+       </div>
+
+       
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#specialityCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#specialityCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel End -->
+
+  </section>
+</section>
+                      <!-- CALL BOX SECTION  -->  
+<section class="container-2">
+  <div class="call-box">
+    <h3>CALL NOW</h3>
+    <span>021-111-666-111</span>
+    <div>
+      <button>ORDER ONLINE</button>
+    </div>
+  </div>
+
+                 <!-- BANK DISCOUNT SECTION -->
+
+  <section class="bank-discount">
+    <h2>BANK DISCOUNT</h2>
+    <div class="line"></div>
+     <!-- Carousel Start -->
+
+  <div id="specialityCarousel" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-inner">
+
+    <!-- First Slide -->
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+
+       <!-- Card 1 -->
+        <div class="card my-card" style="width: 22.5625rem; border:none;">
+          <img src="04-bank-disc-images/pic1.jpeg" class="card-img-top" alt="Image 1">
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card my-card" style="width:  22.5625rem; border:none;">
+          <img src="04-bank-disc-images/pic2.jpeg" class="card-img-top" alt="Image 2">
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card my-card" style="width:  22.5625rem; border:none;">
+          <img src="04-bank-disc-images/pic3.jpeg" class="card-img-top" alt="Image 3">
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- Second Slide -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+
+       <!-- Card 4 -->
+        <div class="card" style="width:  22.5625rem; border:none;">
+          <img src="04-bank-disc-images/pic4.jpeg" class="card-img-top" alt="Image 4">
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card" style="width:  22.5625rem; border:none;">
+          <img src="04-bank-disc-images/pic5.jpeg" class="card-img-top" alt="Image 5">
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card" style="width:  22.5625rem; border:none;">
+          <img src="04-bank-disc-images/pic6.jpg" class="card-img-top" alt="Image 6">
+        </div>
+      
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#specialityCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#specialityCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel End -->
+    
+  </section>
+</section>
+                      <!-- GALLERY SECTION  -->
+<section class="container-3">
+  <section class="gallery">
+    <h1>GALLERY</h1>
+    <img src="05-gallery-images/design.png" alt="" class="design">
+   <!-- Carousel Start -->
+<div id="imageCarousel" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-inner">
+
+    <!-- First Slide -->
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center gap-2 flex-wrap">
+
+        <!-- Card 1 -->
+        <div class="card" style=" border:1px solid #363636;">
+          <img src="05-gallery-images/pic1.jpg" class="card-img-top" alt="Image 1">
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" style="border:1px solid #363636;;">
+          <img src="05-gallery-images/pic2.jpg" class="card-img-top" alt="Image 2">
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card" style="border:1px solid #363636;">
+          <img src="05-gallery-images/pic3.jpg" class="card-img-top" alt="Image 3">
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card" style="border:1px solid #363636;">
+          <img src="05-gallery-images/pic4.jpg" class="card-img-top" alt="Image 4">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Second Slide -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+
+        <!-- Card 5 -->
+        <div class="card" style="border:1px solid #363636;;">
+          <img src="05-gallery-images/pic5.jpg" class="card-img-top" alt="Image 5">
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card" style="border:1px solid #363636;;">
+          <img src="05-gallery-images/pic6.jpg" class="card-img-top" alt="Image 6">
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card" style="border:1px solid #363636;;">
+          <img src="05-gallery-images/pic7.jpg"class="card-img-top" alt="Image 7">
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card" style="border:1px solid #363636;;">
+          <img src="05-gallery-images/pic7.jpg" class="card-img-top" alt="Image 8">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel End -->
+
+  </section>
+
+              <!-- RESTURANT ENVIRONMENT  SECTION -->
+
+  <section class="restu-env">
+    <img src="01-assets/logo.png" alt=" logo" id="logo">
+    <h1>Eva zu beck</h1>
+    <i class="fa fa-quote-left"></i>
+    <p>The ambiance of the restaurant is also pleasant, making it a suitable place to enjoy a meal with family or friends. The service quality is generally good, although during busy times, there might be some waiting involved.</p>
+    <i class="fas fa-quote-right"></i>
+    <div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+   
+  </section>
+
+ 
+</section>
+
+
+
+<section id="location">
+  <h1 class="loc-head">OUR LOCATION</h1>
+
+<div id="cards1">
+  <div class="loc-card">
+    <div class="frame">
+      <a href="https://www.google.com/maps/place/Kababjees+Restaurant+%26+Bakers+-+Super+Highway/@24.9716467,67.1171713,2734m/data=!3m1!1e3!4m6!3m5!1s0x3eb347d912bed263:0x5804ef4b4d9236f0!8m2!3d24.9746875!4d67.1183125!16s%2Fg%2F11rrr9tscm" target="_blank">
+        <img src="06-location-images/pic 1.jpg" alt="" class="loc-img">
+      </a>
+      <!-- yeh upar wala box hamesha fix rahega -->
+      <div class="overlay-frame"></div>
+    </div>
+
+    <div class="loca-body">
+      <i class="fa-solid fa-location-dot" id="loc-icon"></i>
+      &nbsp;&nbsp;
+      <h3>Highway</h3>
+    </div>
+  </div>
+
+  <div class="loc-card">
+    <div class="frame">
+      <a href="https://www.google.com/maps/place/Kababjees+Restaurant+Do+Darya/@24.7568555,67.0958814,15z/data=!4m5!3m4!1s0x0:0xd333c7e5ed0ed511!8m2!3d24.756723!4d67.0957566?sa=X&ved=2ahUKEwi97L_axrnwAhV14XMBHcoiC1wQ_BIwI3oECE0QBQ&shorturl=1" target="_blank">
+        <img src="06-location-images/pic 2.jpg" alt="" class="loc-img">
+      </a>
+      <!-- yeh upar wala box hamesha fix rahega -->
+      <div class="overlay-frame"></div>
+    </div>
+
+    <div class="loca-body">
+      <i class="fa-solid fa-location-dot" id="loc-icon"></i>
+      &nbsp;&nbsp;
+      <h3>Do Darya</h3>
+    </div>
+  </div>
+
+  <div class="loc-card">
+    <div class="frame">
+      <a href="https://www.google.com/maps/place/Kababjees+Shaheed-e-Millat+Branch/@24.9722551,67.0597861,12787m/data=!3m1!1e3!4m6!3m5!1s0x3eb33eee739a7109:0xf89aaedb6373b164!8m2!3d24.8830845!4d67.060157!16s%2Fg%2F11c1mj5xv8?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+        <img src="06-location-images/pic 3.jpg" alt="" class="loc-img">
+      </a>
+      <!-- yeh upar wala box hamesha fix rahega -->
+      <div class="overlay-frame"></div>
+    </div>
+
+    <div class="loca-body">
+      <i class="fa-solid fa-location-dot" id="loc-icon"></i>
+      &nbsp;&nbsp;
+      <h3>Shaheed e Millat</h3>
+    </div>
+  </div>
+
+  <div class="loc-card">
+    <div class="frame">
+      <a href="https://www.google.com/maps/place/25%C2%B026'08.4%22N+68%C2%B021'28.1%22E/@25.4356667,68.3578056,796m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d25.4356667!4d68.3578056?hl=en-PK&entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+        <img src="06-location-images/pic 4.jpg" alt="" class="loc-img">
+      </a>
+      <!-- yeh upar wala box hamesha fix rahega -->
+      <div class="overlay-frame"></div>
+    </div>
+
+    <div class="loca-body">
+      <i class="fa-solid fa-location-dot" id="loc-icon"></i>
+      &nbsp;&nbsp;
+      <h3>Hyderabad</h3>
+    </div>
+  </div>
+</div>
+
+<div id="cards2">
+  <div class="loc-card" id="pad-card">
+  <div class="frame">
+      <a href="https://www.google.com/maps/place/Kababjees/@31.4637784,74.43318,21z/data=!4m6!3m5!1s0x391909005e72754f:0xd71ff9348cd0757a!8m2!3d31.4636712!4d74.4332034!16s%2Fg%2F11lp17lk02?entry=tts&g_ep=EgoyMDI0MDkxNi4wKgBIAVAD" target="_blank">
+        <img src="06-location-images/pic 5.jpg" alt="" class="loc-img">
+      </a>
+      <!-- yeh upar wala box hamesha fix rahega -->
+      <div class="overlay-frame"></div>
+    </div>
+
+    <div class="loca-body">
+      <i class="fa-solid fa-location-dot" id="loc-icon"></i>
+      &nbsp;&nbsp;
+      <h3>Lahore</h3>
+    </div>
+  </div>
+
+  <div class="loc-card">
+  <div class="frame">
+      <a href="https://www.google.com/maps/place/24%C2%B056'49.1%22N+67%C2%B010'50.5%22E/@24.9469722,67.1806944,685m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d24.9469722!4d67.1806944!5m1!1e1?entry=tts&g_ep=EgoyMDI1MDIwNC4wIPu8ASoASAFQAw%3D%3D" target="_blank">
+        <img src="06-location-images/pic 6.jpg" alt="" class="loc-img">
+      </a>
+
+      <div class="overlay-frame"></div>
+    </div>
+
+    <div class="loca-body">
+      <i class="fa-solid fa-location-dot" id="loc-icon"></i>
+      &nbsp;&nbsp;
+      <h3>Falcon Malir</h3>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+  <img src="02-bg-images/bg-img4.jpg" alt="" id="abu-img">
+
+<div id="rows">
+  <div id="row1">
+      <h4 id="abu-head">ABOUT US</h4>
+
+      <p id="abu-para">We welcome you to explore our taste of the world, in continental and chinese delights and that's even before you get to the variety and excellence, of our barbecue grill.</p>
+
+<div id="fa-icons">
+  <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+  <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+</div>
+</div>
+
+<div id="row2">
+  <h4 id="con-head">CONTACT US</h4>
+  <p id="con-email"><i class="fa-regular fa-envelope" id="icons"></i> marketing@kababjees.com</p>
+  <p id="con-phone"><i class="fa-solid fa-phone" id="icons"></i> 021 111 666 111</p>
+</div>
+
+<div id="row3">
+  <h4 id="time-head">WORK TIME</h4>
+  <div id="loca-time">
+    <h4>DO DARYA</h4>
+    <p>Monday - Sunday ..... <span>06:00PM - 01:00AM</span></p>
+  </div>
+
+  <div id="loca-time">
+    <h4>SHAHEED-E-MILLAT</h4>
+    <p>Monday - Sunday ..... <span>06:00PM - 01:00AM</span></p>
+  </div>
+
+  <div id="loca-time">
+    <h4>HIGHWAY</h4>
+    <p>Monday - Sunday ..... <span>06:00PM - 01:00AM</span></p>
+  </div>
+
+  <div id="loca-time">
+    <h4>FALCCON</h4>
+    <p>Monday - Sunday ..... <span>06:00PM - 01:00AM</span></p>
+  </div>
+
+    <div id="loca-time">
+    <h4>HYDERABAB</h4>
+    <p>Monday - Sunday ..... <span>06:00PM - 01:00AM</span></p>
+  </div>
+
+    <div id="loca-time">
+    <h4>LAHORE</h4>
+    <p>Monday - Sunday ..... <span>06:00PM - 01:00AM</span></p>
+  </div>
+</div>
+
+<div id="row4">
+  <h4>LOCATIONS</h4>
+  <a href="https://www.google.com/maps/place/Kababjees+Restaurant+Do+Darya/@24.7568555,67.0958814,15z/data=!4m6!3m5!1s0x3eb323588318f8a3:0xd333c7e5ed0ed511!8m2!3d24.7568555!4d67.0958814!16s%2Fg%2F11c5_r_qr1?entry=tts" target="_blank">DO DARYA</a>
+  <a href="https://www.google.com/maps/place/25%C2%B026'08.4%22N+68%C2%B021'28.1%22E/@25.4356667,68.3578056,17z/data=!3m1!4b1!4m4!3m3!8m2!3d25.4356667!4d68.3578056?hl=en-PK&entry=tts" target="_blank">HYDERABAB</a>
+  <a href="https://www.google.com/maps/place/Kababjees+Shaheed-e-Millat+Branch/@24.9722551,67.0597861,12787m/data=!3m1!1e3!4m6!3m5!1s0x3eb33eee739a7109:0xf89aaedb6373b164!8m2!3d24.8830845!4d67.060157!16s%2Fg%2F11c1mj5xv8!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">SHAHEED-E-MILLAT</a>
+  <a href="https://www.google.com/maps/place//@24.9746449,67.1185201,3197m/data=!3m1!1e3!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">HIGHWAY</a>
+  <a href="https://www.google.com/maps/place/24%C2%B056'49.1%22N+67%C2%B010'50.5%22E/@24.9469722,67.1806944,799m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d24.9469722!4d67.1806944!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">FALCON MALIR</a>
+  <a href="https://www.google.com/maps/place/LalQila+Restaurant/@31.501385,74.3231387,3007m/data=!3m1!1e3!4m6!3m5!1s0x39190471d0a5171b:0x61a2deda600488a8!8m2!3d31.501385!4d74.3231387!16s%2Fg%2F11b6bj06n3!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">LAHORE</a>
+</div>
+</div>
+
+<footer>
+  <div id="gray-circle"></div>
+  <div id="footer-1div">
+    <p>2025 All rights reserved. Powered by</p>
+  </div>
+  <div id="dark-gray-circle"></div>
+  <div id="front-circle"><a href="#home"><i class="fa-solid fa-angles-up"></i></a></div>
+</footer>
+</section>
+
+
+
+         <!--  Bootstrap js Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,902 @@
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+/*NAVBAR CSS AND RESPONSIVENES*/
+/*navbar*/
+
+.navbar {
+  height: 3.8125rem;
+  position: fixed;
+  width: 100%;
+
+}
+
+/*nav options*/
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 1.25rem;
+  color: #e7e7e7;
+  padding: 0rem 0.9375rem 0rem 0.9375rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #d3b56a;
+}
+
+.navbar .container {
+  margin: 0rem 13.75rem;
+}
+
+
+/*navbar logo*/
+
+.navbar-brand img {
+  height: 2.5rem;
+  width: 14.85875rem;
+}
+
+/*responsivenes */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 1.0625rem;
+    color: #e7e7e7;
+    padding: 0rem 0.75rem 0rem 0.75rem;
+  }
+
+  .navbar .container {
+    margin: 0px 100px;
+    padding: 0px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+  }
+
+  .navbar .navbar-brand {
+    margin: 0 !important;
+  }
+
+  .navbar .navbar-toggler {
+    margin-left: auto;
+
+  }
+}
+
+/* ---------------------- -:( MENU POP UP ):- ---------------------- */
+.menu-btn {
+  color: #dcb658;
+  background-color: black;
+  padding: 5px 30px 5px 30px;
+  margin-left: 4px;
+  text-decoration: none;
+}
+
+.menu-btn:hover {
+  text-decoration: underline;
+}
+
+/*HOME SECTION CSS*/
+
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.5;
+
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+}
+
+#heading1 {
+  color: #e7e7e7;
+  font-size: 3.125rem;
+  text-align: center;
+  font-weight: 400;
+  word-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
+  line-height: 3.2rem;
+}
+
+/*ABOUT US SECTION CSS*/
+
+.container-1 {
+  background-image: url(02-bg-images/bg-img1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 60px;
+  background-color: #121212;
+
+}
+
+#about-us div {
+  flex: 1;
+  margin-left: 8rem;
+
+}
+
+#about-us h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #e7e7e7;
+  font-weight: 400;
+  width: 100%;
+  max-width: 520px;
+}
+
+#about-us p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: #e7e7e7;
+  text-align: justify;
+  font-weight: 100;
+  font-family: cabin, sans-serif;
+  opacity: 0.5 !important;
+  width: 100%;
+  max-width: 520px;
+}
+
+#about-us img {
+  width: 100%;
+  max-width: 520px;
+  margin-right: 8rem;
+
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+  #about-us {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  #about-us div {
+    margin-left: 0;
+  }
+
+  #about-us img {
+    margin-right: 0;
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1270px) and (min-width: 993px) {
+  #about-us div {
+    margin-left: 2rem;
+  }
+
+  #about-us img {
+    margin-right: 2rem;
+    max-width: 400px;
+  }
+
+  #about-us h1,
+  #about-us p {
+    max-width: 100%;
+  }
+}
+
+/*OUR SPECIALITY SECTION CSS*/
+
+#our-speciality {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#our-speciality h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #e7e7e7;
+  margin-bottom: 10px;
+}
+
+#our-speciality .line {
+  width: 113px;
+  height: 3px;
+  background: #DCB658;
+  margin: 15px auto;
+}
+
+#our-speciality .text {
+  padding-bottom: 10px;
+}
+
+#our-speciality i {
+  font-size: 1.0625rem;
+  color: #e7e7e7;
+  font-family: cabin, sans-serif;
+}
+
+/*cards css*/
+.card {
+  padding: 5px;
+  border-radius: 10px;
+  height: 20.780625rem;
+  border: solid 2px black;
+}
+
+.card img {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.card img:hover {
+  opacity: 0.7;
+  transition: opacity 0.4s linear;
+}
+
+.card button {
+  background-color: #DCB658;
+  color: rgb(52, 52, 52);
+  border: none;
+  border-radius: 0px;
+  font-size: 18px;
+
+}
+
+.card button:hover {
+  background-color: #DCB658;
+  color: rgb(52, 52, 52);
+}
+
+.card .card-body {
+  padding-top: 10px;
+}
+
+.card-container {
+  padding: 10px;
+  border-radius: 20px;
+  border: solid 3px rgb(255, 255, 255);
+  margin: 15px;
+}
+
+/*CALL BOX SECTION CSS */
+
+.container-2 {
+  background-image: url(02-bg-images/bg-img2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+.call-box {
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border: 1px solid #5c5c5c;
+
+}
+
+.call-box h3 {
+  color: #6f6f6f;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: cabin, sans-serif;
+}
+
+.call-box span {
+  color: #DCB658;
+  font-size: 40px;
+  margin-top: 10px;
+  padding-bottom: px;
+}
+
+.call-box span:hover {
+  text-decoration: underline;
+
+}
+
+.call-box div {
+  padding: 20px 0px;
+}
+
+.call-box div button {
+  background-color: #DCB658;
+  color: #1b1b1b;
+  font-size: 18px;
+  padding: 10px 16px;
+  border: none;
+
+}
+
+/*BANK DISCOUNT SECTION CSS*/
+.bank-discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0px;
+
+}
+
+.bank-discount h2 {
+  color: #e7e7e7;
+  font-size: 40px;
+  font-weight: 400;
+  padding-top: 50px;
+}
+
+.bank-discount .line {
+  width: 113px;
+  height: 3px;
+  background: #DCB658;
+  margin-top: 10px;
+
+
+}
+
+#specialityCarousel .my-card {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  margin: 30px 0px 50px 0px;
+  background-color: transparent;
+
+
+}
+
+.my-card img:hover {
+  opacity: 1;
+
+}
+
+/*GALLERY SECTION CSS*/
+
+
+/* Container with dark overlay */
+.container-3 {
+  position: relative;
+  background-image: url(02-bg-images/bg-img3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: black;
+  z-index: 1;
+}
+
+/* Overlay Layer */
+.container-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* yahan se dark ka control milega */
+  z-index: -1;
+  /* content ke neeche rahega */
+}
+
+
+.gallery {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #151515;
+}
+
+.gallery h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #e7e7e7;
+  margin-bottom: 10px;
+}
+
+.gallery .design {
+  width: 400px;
+
+}
+
+#imageCarousel .card {
+
+  background-color: #1b1b1b;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 0px;
+  height: 265px;
+
+}
+
+#imageCarousel .card img {
+  width: 243.171px;
+  height: 243.171px;
+  border-radius: 0px;
+  border: 1px solid #c0bdbd;
+}
+
+#imageCarousel .card img:hover {
+  box-shadow: 0 4px 5px rgba(199, 199, 198, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  opacity: 1;
+}
+
+/* RESTURANT ENVIRONMENT SECTION CSS */
+.restu-env {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+
+}
+
+.restu-env img {
+  width: 265px;
+  height: auto;
+}
+
+.restu-env h1 {
+  color: #DCB658;
+  font-size: 28px;
+  font-family: cabin, sans-serif;
+  font-weight: 400;
+  margin: 20px 0px 0px;
+}
+
+.restu-env i {
+  color: white;
+  font-size: 40px;
+  align-self: flex-start;
+  margin-left: 150px;
+}
+
+.restu-env .fa-quote-right {
+  align-self: flex-end;
+  margin-right: 200px;
+
+}
+
+
+.restu-env p {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+
+
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+
+  max-width: 1120px;
+  padding: 0px 50px;
+}
+
+.restu-env div {
+  display: flex;
+
+}
+
+.restu-env .circle {
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+.restu-env .circle:hover {
+  background-color: #DCB658;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .restu-env img {
+    width: 160px;
+  }
+
+  .restu-env h1 {
+    font-size: 22px;
+  }
+
+  .restu-env p {
+    font-size: 16px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .restu-env i {
+    font-size: 25px;
+    margin: 5px 0;
+  }
+
+
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .restu-env img {
+    width: 190px;
+  }
+
+  .restu-env h1 {
+    font-size: 25px;
+  }
+
+  .restu-env p {
+    font-size: 18px;
+    max-width: 600px;
+  }
+
+  .restu-env i {
+    font-size: 28px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .restu-env img {
+    width: 200px;
+  }
+
+  .restu-env h1 {
+    font-size: 26px;
+  }
+
+  .restu-env p {
+    font-size: 19px;
+    max-width: 750px;
+  }
+}
+
+/*OUR LOCATION SECTION CSS*/
+
+
+#location {
+  background-color: #151515;
+  padding-left: 15%;
+  padding-top: 50px;
+  padding-right: 15%;
+  padding-bottom: 30px;
+}
+
+.loc-head {
+  color: white;
+  text-align: center;
+}
+
+.loc-card {
+  width: 240px;
+  height: 230px;
+  position: relative;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.loc-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.frame:hover .loc-img {
+  transform: rotate(10deg) scale(1.2);
+}
+
+.loca-body {
+  color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.loca-body h3 {
+  color: #dcb658;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+#loc-icon {
+  font-size: 20px;
+  padding-top: 8px;
+  padding-left: 50px;
+}
+
+#cards1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+#cards2 {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+#pad-card {
+  margin-right: 40px;
+}
+
+
+/* CONTECT */
+#contact {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+  padding-bottom: 0%;
+}
+
+#abu-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+
+/* ROWS */
+
+#rows {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding-left: 20%;
+}
+
+/* ROW 01 */
+
+#row1 {
+  width: 200px;
+  line-height: 30px;
+}
+
+#abu-head {
+  color: #dcb658;
+  font-weight: 350;
+}
+
+#abu-para {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.icon {
+  border: white solid 3px;
+  border-radius: 50%;
+  padding: 3px 8px;
+  margin-right: 20px;
+  transition: 0.4s;
+  color: white;
+}
+
+.icon:hover {
+  border: #dcb658 solid 3px;
+  color: #dcb658;
+}
+
+
+.icon:hover i {
+  color: #dcb658;
+}
+
+#fa-icons {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.158);
+  border: rgba(255, 255, 255, 0.225) solid 1px;
+  width: 70%;
+  padding: 5px 7px;
+  padding-left: 20px;
+  border-radius: 9px;
+  transition: 0.4s;
+}
+
+#fa-icons:hover {
+  background-color: transparent;
+  border: #dcb658 solid 0.8px;
+}
+
+/* ROW 02 */
+
+#con-head {
+  color: #dcb658;
+  font-weight: 400;
+
+}
+
+#row2 p {
+  color: white;
+  transition: 0.8s;
+}
+
+#row2 p:hover,
+#con-head:hover {
+  color: #d4af37;
+}
+
+#icons {
+  color: #dcb658;
+}
+
+/* ROW 03 */
+
+#time-head {
+  color: #dcb658;
+  font-weight: 400;
+}
+
+#loca-time h4 {
+  color: white;
+  font-weight: 400;
+}
+
+#loca-time p {
+  color: white;
+}
+
+#loca-time span {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #dcb658;
+  font-size: 15px;
+}
+
+
+/* ROW 04 */
+
+#row4 h4 {
+  color: #dcb658;
+  font-weight: 400;
+}
+
+#row4 a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* FOOTER */
+
+#gray-circle {
+  position: absolute;
+  z-index: -1;
+  padding: 60px;
+  background-color: #595959;
+  width: 8%;
+  border-radius: 50%;
+  bottom: 13px;
+  left: 45%;
+}
+
+#footer-1div {
+  position: relative;
+  background-color: #151515;
+  border-top: #595959 solid 4px;
+  padding: 20px;
+  margin-bottom: 0%;
+  z-index: 0;
+  text-align: center;
+  color: #151515;
+  margin-top: 60px;
+}
+
+#dark-gray-circle {
+  position: absolute;
+  z-index: 1;
+  padding: 58px;
+  background-color: #151515;
+  width: 8%;
+  border-radius: 50%;
+  bottom: 13px;
+  left: 45%;
+}
+
+#front-circle {
+  position: absolute;
+  z-index: 1;
+  padding: 60px;
+  width: 8%;
+  border-radius: 50%;
+  bottom: 13px;
+  left: 45%;
+  padding-left: 47px;
+  font-size: 20px;
+  color: white;
+}
+
+#front-circle a {
+  color: white;
+}
+
+#front-circle a:hover {
+  color: #dcb658;
+}
+
+
+/* BANK FILE */
+
+#bg-img {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 80%;
+  opacity: 0.6;
+}
+
+#bank-para {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 15%;
+  padding-left: 30%;
+  font-weight: 350;
+  letter-spacing: 4px;
+}
+
+#bank-sections {
+  background-color: #151515;
+}
+
+#cards {
+  padding-left: 15%;
+}
+
+.images {
+  height: 500px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 0%;
+}
